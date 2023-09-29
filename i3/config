@@ -210,6 +210,17 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+#bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+  bindsym l exec i3-msg exit
+  bindsym r exec systemctl reboot
+  bindsym s exec systemctl poweroff
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+
+
 #for_window [class="^.*"] border pixel 3
 gaps inner 5
 #gaps outer 0
@@ -217,6 +228,9 @@ gaps inner 5
 default_border none
 
 bindsym $mod+r mode "resize"
+
+for_window [title="vim-cheat-sheet.jpeg$"] floating enable position center
+bindsym $mod+Shift+v exec --no-startup-id feh '/home/ask-155/Pictures/vim-cheat-sheet.jpeg'
 
 #map keyboard layout swapping super and alt keys
 exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win"
