@@ -230,7 +230,7 @@ default_border none
 bindsym $mod+r mode "resize"
 
 for_window [title="vim-cheat-sheet.jpeg$"] floating enable position center
-bindsym $mod+Shift+v exec --no-startup-id feh '/home/ask-155/Pictures/vim-cheat-sheet.jpeg'
+bindsym $mod+Shift+v exec --no-startup-id feh '/home/ask-155/.config/img/vim-cheat-sheet.jpeg'
 
 #map keyboard layout swapping super and alt keys
 exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win"
@@ -246,4 +246,5 @@ bar {
         status_command i3status
 	font pango:DejaVu Sans Mono 9
 	separator_symbol "|"
+	workspace_min_width 35
 }
