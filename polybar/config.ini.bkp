@@ -16,35 +16,14 @@
 ;
 ;==========================================================
 
-;[colors]
-;background = #282a36
-;background-alt = #44475a
-;foreground = #f8f8f2
-;primary = #bd93f9
-;secondary = #ffb86c
-;alert = #ff5555
-;disabled = #6272a4
-
 [colors]
-;; Base
-background = #232136
-;; Highlight Med
-background-alt = #44415a
-;; Text
-foreground = #e0def4
-;; Rose
-primary = #ea9a97
-;; Gold
-secondary = #f6c177
-;; Love
-alert = #eb6f92
-;; Muted
-disabled = #6e6a86
-
-
-
-
-
+background = #282a36
+background-alt = #44475a
+foreground = #f8f8f2
+primary = #bd93f9
+secondary = #ffb86c
+alert = #ff5555
+disabled = #6272a4
 
 [bar/main]
 monitor = ${env:MONITOR:eDP-1}
@@ -56,14 +35,13 @@ foreground = ${colors.foreground}
 line-size = 3pt
 border-size = 4pt
 border-color = #00000000
-padding-left = 2
+padding-left = 0
 padding-right = 1
 module-margin = 1
 separator = |
 separator-foreground = ${colors.disabled}
 font-0 = "FiraCode Nerd Font:size=10;2"
-; modules-left = xworkspaces xwindow
-modules-left = i3 xwindow
+modules-left = xworkspaces xwindow
 modules-center = date
 modules-right =  pulseaudio xkeyboard cpu memory battery tray
 cursor-click = pointer
@@ -81,7 +59,7 @@ foreground = ${colors.foreground}
 line-size = 3pt
 border-size = 4pt
 border-color = #00000000
-padding-left = 2
+padding-left = 0
 padding-right = 1
 module-margin = 1
 separator = |
@@ -96,90 +74,9 @@ enable-ipc = true
 
 [module/systray]
 type = internal/tray
+
 format-margin = 8pt
 tray-spacing = 16pt
-
-[module/i3]
-type = internal/i3
-pin-workspaces = true
-show-urgent = true
-strip-wsnumbers = true
-index-sort = true
-enable-click = true
-enable-scroll = false
-wrapping-scroll = false
-reverse-scroll = false
-fuzzy-match = true
-
-ws-icon-0 = "1; "
-ws-icon-1 = "2; "
-ws-icon-2 = "3; "
-ws-icon-3 = "4;󱁤 "
-ws-icon-4 = "5; "
-ws-icon-5 = "6;6"
-ws-icon-6 = "7;7"
-ws-icon-7 = "8;8
-ws-icon-8 = "9;9"
-ws-icon-default = " " 
-
-; Available tags:
-;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
-;   <label-mode> (default)
-format = <label-state> <label-mode>
-
-; Available tokens:
-;   %mode%
-; Default: %mode%
-label-mode = %mode%
-label-mode-padding = 1
-label-mode-background = #e60053
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon% %name%
-label-focused = %icon%
-label-focused-foreground = #ea9a97
-;label-focused-background = #3f3f3f
-;label-focused-underline = #ea9a97
-;label-focused-padding = 1
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon% %name%
-label-unfocused = %icon%
-;label-unfocused-padding = 1
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon% %name%
-label-visible = %icon%
-label-visible-underline = #555555
-;label-visible-padding = 1
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon% %name%
-label-urgent = %icon%
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
-;label-urgent-padding = 1
-
-; Separator in between workspaces
-label-separator = |
-label-separator-padding = 1
-label-separator-foreground = ${colors.disabled}
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -187,7 +84,7 @@ pin-workspaces = true
 icon-0 = "1; "
 icon-1 = "2; "
 icon-2 = "3; "
-icon-3 = "4;󱁤 "
+icon-3 = "4; "
 icon-4 = "5; "
 icon-5 = "6;6"
 icon-6 = "7;7"
@@ -323,6 +220,19 @@ animation-discharging-0 = 󰂂
 animation-discharging-1 = 󰁿
 animation-discharging-2 = 󰁼
 animation-discharging-framerate = 750
+
+[module/i3]
+type = internal/i3
+index-sort = true
+pin-workspaces = true
+strip-wsnumbers = true
+
+ws-icon-0 = "1;" 
+ws-icon-1 = "2;"
+ws-icon-2 = "3;"
+ws-icon-3 = "4;"
+ws-icon-4 = "5;"
+ws-icon-default = ""
 
 [settings]
 screenchange-reload = true

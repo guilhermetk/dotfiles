@@ -232,6 +232,15 @@ mode "exit: [b]lock [l]ogout, [r]eboot, [s]hutdown" {
 }
 bindsym $mod+x mode "exit: [b]lock [l]ogout, [r]eboot, [s]hutdown"
 
+mode "monitors: [1]notebook only [2]notebook and external, [3]external only" {
+  bindsym 1 exec "bash ~/.screenlayout/notebookonly.sh"
+  bindsym 2 exec "bash ~/.screenlayout/notebookonly.sh"
+  bindsym 3 exec "bash ~/.screenlayout/notebookonly.sh"
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+Shift+m mode "monitors: [1]notebook only [2]notebook and external, [3]external only"
+
 
 #for_window [class="^.*"] border pixel 3
 gaps inner 5
