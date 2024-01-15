@@ -254,7 +254,8 @@ for_window [title="vim-cheat-sheet.jpeg$"] floating enable position center
 bindsym $mod+Shift+v exec --no-startup-id feh '/home/ask-155/.config/img/vim-cheat-sheet.jpeg'
 
 #map keyboard layout swapping super<->alt keys and escape<->capslock
-exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win -option caps:escape"
+# exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win -option caps:escape"
+exec_always "setxkbmap -layout us -variant intl"
 
 #-option 'ctrl:swapcaps'"
 exec --no-startup-id feh --no-fehbg --bg-fill '/home/ask-155/Pictures/retrowave-sunset.jpg'
