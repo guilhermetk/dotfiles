@@ -239,8 +239,7 @@ mode "monitors: [1]notebook only [2]notebook and external, [3]external only" {
   bindsym Escape mode "default"
   bindsym Return mode "default"
 }
-bindsym $mod+Shift+m mode "monitors: [1]notebook only [2]notebook and external, [3]external only"
-
+bindsym $mod+shift+m mode "monitors: [1]notebook only [2]notebook and external, [3]external only"
 
 #for_window [class="^.*"] border pixel 3
 gaps inner 5
@@ -255,7 +254,10 @@ bindsym $mod+Shift+v exec --no-startup-id feh '/home/ask-155/.config/img/vim-che
 
 #map keyboard layout swapping super<->alt keys and escape<->capslock
 # exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win -option caps:escape"
-exec_always "setxkbmap -layout us -variant intl"
+exec_always "setxkbmap -layout us"
+bindsym $mod+Shift+g exec "setxkbmap -layout us"
+bindsym $mod+Shift+b exec "setxkbmap -layout us -variant intl"
+
 
 #-option 'ctrl:swapcaps'"
 exec --no-startup-id feh --no-fehbg --bg-fill '/home/ask-155/Pictures/retrowave-sunset.jpg'
