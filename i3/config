@@ -241,8 +241,13 @@ mode "monitors: [1]notebook only [2]notebook and external, [3]external only" {
 }
 bindsym $mod+shift+m mode "monitors: [1]notebook only [2]notebook and external, [3]external only"
 
-#for_window [class="^.*"] border pixel 3
-gaps inner 5
+# border settings
+for_window [class="^.*"] border pixel 1
+# class                 border  backgr. text    indicator child_border 
+client.focused          #ea9a97 #ea9a97 #2a273f #2a273f #ea9a97 
+client.unfocused        #232136 #232136 #e0def4 #2a273f #232136
+gaps inner 2
+hide_edge_borders smart
 #gaps outer 0
 
 default_border none
