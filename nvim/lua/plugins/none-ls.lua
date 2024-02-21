@@ -8,9 +8,9 @@ return {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.prettier,
         -- diagnostics
-        null_ls.builtins.diagnostics.eslint,
+        -- null_ls.builtins.diagnostics.eslint,
         -- code actions
-        null_ls.builtins.code_actions.eslint,
+        -- null_ls.builtins.code_actions.eslint,
       },
     }
   end,
