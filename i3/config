@@ -76,11 +76,11 @@ bindsym $mod+Shift+d exec --no-startup-id rofi -show window
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+ccedilla focus right
-bindsym $mod+Tab focus next
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# bindsym $mod+Tab focus next
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -89,10 +89,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ccedilla move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -101,10 +101,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+v split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -157,7 +157,7 @@ workspace $ws4 output HDMI-1
 assign [class="Slack"] $ws1
 assign [class="Brave-browser"] $ws3
 assign [class="Code"] $ws2
-assign [class="jetbrains-idea"] $ws2
+#assign [class="jetbrains-idea"] $ws2
 assign [class="azuredatastudio"] $ws4
 assign [class="pgadmin4"] $ws4
 assign [class="GitKraken"] $ws4
@@ -239,22 +239,27 @@ mode "monitors: [1]notebook only [2]notebook and external, [3]external only" {
   bindsym Escape mode "default"
   bindsym Return mode "default"
 }
-bindsym $mod+Shift+m mode "monitors: [1]notebook only [2]notebook and external, [3]external only"
+bindsym $mod+shift+m mode "monitors: [1]notebook only [2]notebook and external, [3]external only"
 
-
-#for_window [class="^.*"] border pixel 3
-gaps inner 5
+# border settings
+for_window [class="^.*"] border pixel 1
+# class                 border  backgr. text    indicator child_border 
+client.focused          #ea9a97 #ea9a97 #2a273f #2a273f #ea9a97 
+client.unfocused        #232136 #232136 #e0def4 #2a273f #232136
+gaps inner 2
+hide_edge_borders smart
 #gaps outer 0
 
 default_border none
 
 bindsym $mod+r mode "resize"
 
-for_window [title="vim-cheat-sheet.jpeg$"] floating enable position center
-bindsym $mod+Shift+v exec --no-startup-id feh '/home/ask-155/.config/img/vim-cheat-sheet.jpeg'
-
 #map keyboard layout swapping super<->alt keys and escape<->capslock
-exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win -option caps:escape"
+# exec_always "setxkbmap -layout us -variant intl -option altwin:swap_alt_win -option caps:escape"
+exec_always "setxkbmap -layout us"
+bindsym $mod+Shift+g exec "setxkbmap -layout us"
+bindsym $mod+Shift+b exec "setxkbmap -layout us -variant intl"
+
 
 #-option 'ctrl:swapcaps'"
 exec --no-startup-id feh --no-fehbg --bg-fill '/home/ask-155/Pictures/retrowave-sunset.jpg'
