@@ -1,7 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$PATH:/usr/pgadmin4/bin/pgadmin4"
-export PATH="$PATH:/home/ask-155/.cargo/bin"
 export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -45,16 +43,12 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 alias updt="sudo nala update && sudo nala upgrade -y"
-alias off="sudo shutdown now"
-alias python=python3
 alias vim=nvim
 alias zz=zellij
 alias zg=lazygit
 alias zd=lazydocker
 alias nn="nvim ."
 alias nv="nvm use"
-alias vpnup="sudo wg-quick up wg0"
-alias vpndown="sudo wg-quick down wg0"
 alias sd="cd ~ && cd \$(fd -t d -H | fzf)"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -113,27 +107,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /home/ask-155/IdeaProjects/asksuite-dev/asksuite-lambda-crawler/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/ask-155/IdeaProjects/asksuite-dev/asksuite-lambda-crawler/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /home/ask-155/IdeaProjects/asksuite-dev/asksuite-lambda-crawler/node_modules/tabtab/.completions/sls.zsh ]] && . /home/ask-155/IdeaProjects/asksuite-dev/asksuite-lambda-crawler/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /home/ask-155/IdeaProjects/asksuite-dev/asksuite-lambda-crawler/node_modules/tabtab/.completions/slss.zsh ]] && . /home/ask-155/IdeaProjects/asksuite-dev/asksuite-lambda-crawler/node_modules/tabtab/.completions/slss.zsh
-
-# bun completions
-[ -s "/home/ask-155/.bun/_bun" ] && source "/home/ask-155/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
