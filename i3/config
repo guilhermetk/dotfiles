@@ -55,7 +55,8 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec kitty
+# bindsym $mod+Return exec kitty
+bindsym $mod+Return exec --no-startup-id alacritty;focus
 
 # start file explorer
 bindsym $mod+Shift+Return exec nautilus ~ 
@@ -157,7 +158,7 @@ workspace $ws4 output HDMI-1
 assign [class="Slack"] $ws1
 assign [class="Brave-browser"] $ws3
 assign [class="Code"] $ws2
-#assign [class="jetbrains-idea"] $ws2
+assign [class="jetbrains-idea"] $ws4
 assign [class="azuredatastudio"] $ws4
 assign [class="pgadmin4"] $ws4
 assign [class="GitKraken"] $ws4
@@ -265,7 +266,7 @@ bindsym $mod+Shift+b exec "setxkbmap -layout us -variant intl"
 exec --no-startup-id feh --no-fehbg --bg-fill '/home/ask-155/Pictures/retrowave-sunset.jpg'
 exec --no-startup-id "xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 1920x1080 --rate 75.00 --pos 1920x0 --rotate normal --output DP-1 --off"
 exec --no-startup-id picom -CGb
-exec --no-startup-id slack
+# exec --no-startup-id slack
 exec_always "bash ~/.config/polybar/launch.sh"
 
 # Start i3bar to display a workspace bar (plus the system information i3status

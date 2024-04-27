@@ -12,6 +12,7 @@ return {
 
 		-- Additional lua configuration, makes nvim stuff amazing!
 		'folke/neodev.nvim',
+		'onsails/lspkind.nvim',
 	},
 	config = function()
 		require('mason').setup()
