@@ -263,7 +263,7 @@ bindsym $mod+Shift+b exec "setxkbmap -layout us -variant intl"
 
 
 #-option 'ctrl:swapcaps'"
-exec --no-startup-id feh --no-fehbg --bg-fill '/home/ask-155/Pictures/retrowave-sunset.jpg'
+exec --no-startup-id feh --no-fehbg --bg-fill '/home/tisco/.config/i3/retrowave.jpg'
 exec --no-startup-id "xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 1920x1080 --rate 75.00 --pos 1920x0 --rotate normal --output DP-1 --off"
 exec --no-startup-id picom -CGb
 # exec --no-startup-id slack
