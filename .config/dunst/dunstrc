@@ -158,7 +158,8 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<i>%s</i>\n%b"
+    # format = "<i>%s</i>\n%b"
+    format = "<b><span foreground='#ebbcba'>%s</span></b>\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -309,15 +310,15 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#1f1d2e"
-    foreground = "#ebbcba"
-    frame_color = "#c4a7e7"
+    foreground = "#e0def4"
+    frame_color = "#f6c177"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
     background = "#1f1d2e"
-    foreground = "#ebbcba"
+    foreground = "#e0def4"
     highlight = "#c4a7e7"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
@@ -325,8 +326,8 @@
 
 [urgency_critical]
     background = "#1f1d2e"
-    foreground = "#ebbcba"
-    frame_color = "#c4a7e7"
+    foreground = "#e0def4"
+    frame_color = "#eb6f92"
     timeout = 0
 
 [brightness]
