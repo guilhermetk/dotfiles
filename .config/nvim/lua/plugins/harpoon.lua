@@ -10,8 +10,8 @@ return {
         sync_on_ui_close = true,
       },
     }
-    vim.keymap.set('n', '<leader>ha', function()
-      harpoon:list():append()
+    vim.keymap.set('n', '<leader>hh', function()
+      harpoon:list():add()
     end)
     vim.keymap.set('n', '<leader>hl', function()
       harpoon.ui:toggle_quick_menu(harpoon:list())
