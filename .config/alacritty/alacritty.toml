@@ -1,0 +1,23 @@
+import = ["~/.config/alacritty/rose-pine.toml"]
+
+[window]
+opacity = 1
+
+[font]
+size = 11
+normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }
+bold = { family = "JetBrains Mono Nerd Font", style = "Bold" }
+italic = { family = "JetBrains Mono Nerd Font", style = "Regular" }
+bold_italic = { family = "JetBrains Mono Nerd Font", style = "Bold" }
+
+[window.padding]
+y = 2
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "off" }
+
+[env]
+WINIT_X11_SCALE_FACTOR = '1'
