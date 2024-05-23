@@ -22,9 +22,9 @@ return {
         end
 
         -- Navigation
-        map({ 'n', 'v' }, ']c', function()
+        map({ 'n', 'v' }, '<leader>hn', function()
           if vim.wo.diff then
-            return ']c'
+            return '<leader>nh'
           end
           vim.schedule(function()
             gs.next_hunk()
@@ -32,9 +32,9 @@ return {
           return '<Ignore>'
         end, { expr = true, desc = 'Jump to next hunk' })
 
-        map({ 'n', 'v' }, '[c', function()
+        map({ 'n', 'v' }, '<leader>hN', function()
           if vim.wo.diff then
-            return '[c'
+            return '<leader>hN'
           end
           vim.schedule(function()
             gs.prev_hunk()
