@@ -1,5 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
 export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -50,6 +56,7 @@ alias zd=lazydocker
 alias nn="nvim ."
 alias nv="nvm use"
 alias sd="cd ~ && cd \$(fd -t d -H | fzf)"
+alias y="yazi"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
@@ -113,3 +120,7 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
+
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/rose-pine.omp.json)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
