@@ -22,12 +22,6 @@ return {
     require('telescope').setup {
       defaults = {
         sorting_strategy = 'descending',
-        mappings = {
-          i = {
-            ['<C-u>'] = false,
-            ['<C-d>'] = false,
-          },
-        },
         layout_config = {
           prompt_position = 'top', -- Show the prompt on top
         },
