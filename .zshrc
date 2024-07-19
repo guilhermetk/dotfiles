@@ -48,15 +48,6 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
-alias updt="sudo nala update && sudo nala upgrade -y"
-alias vim=nvim
-alias zz=zellij
-alias zg=lazygit
-alias zd=lazydocker
-alias nn="nvim ."
-alias nv="nvm use"
-alias sd="cd ~ && cd \$(fd -t d -H | fzf)"
-alias y="yazi"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
@@ -120,7 +111,26 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/rose-pine.omp.json)"
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+alias fd=fdfind
+alias ld="eza -l --icons"
+alias nn="nvim ."
+alias nv="cd ~ && nvim \$(fd -t d -H | fzf)"
+alias nv="nvm use"
+alias sd="cd ~ && cd \$(fd -t d -H | fzf)"
+alias updt="sudo nala update && sudo nala upgrade -y"
+alias vim=nvim
+alias y="yazi"
+alias zd=lazydocker
+alias zg=lazygit
+alias zz=zellij
+alias ls="eza -l --icons"
+
+# bun completions
+[ -s "/home/tisco/.bun/_bun" ] && source "/home/tisco/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
