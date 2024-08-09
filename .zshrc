@@ -75,7 +75,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,14 +115,10 @@ eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/rose-pine.omp.json)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 alias fd=fdfind
-alias ld="eza -l --icons"
-alias nn="nvim ."
 alias nv="cd ~ && nvim \$(fd -t d -H | fzf)"
-alias nv="nvm use"
 alias sd="cd ~ && cd \$(fd -t d -H | fzf)"
-alias updt="sudo nala update && sudo nala upgrade -y"
-alias vim=nvim
 alias y="yazi"
+alias cat=batcat
 alias zd=lazydocker
 alias zg=lazygit
 alias zz=zellij
