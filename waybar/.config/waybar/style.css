@@ -58,8 +58,7 @@
 }
 
 #clock {
-  color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
+  border-radius: 1rem;
   margin-right: 1rem;
 }
 
@@ -79,15 +78,10 @@
   color: @yellow;
 }
 
-#backlight,
-#battery {
-  border-radius: 0;
-}
-
 #pulseaudio {
-  color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
+  border-radius: 1rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #custom-music {
@@ -117,12 +111,17 @@
 
 #custom-notification {
   font-family: "BerkeleyMono Nerd Font Mono";
+  font-size: 18px;
   margin-right: 1rem;
   border-radius: 1rem;
 }
 
-#idle_inhibitor{
+#idle_inhibitor {
   margin-right: 1rem;
   border-radius: 1rem;
+  font-size: 18px;
 }
 
+#window {
+  margin-left: 1rem;
+}
