@@ -1,0 +1,75 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": "30",
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["custom/music"],
+  "modules-right": [
+    "sway/language",
+    "pulseaudio",
+    "clock",
+    "custom/notification",
+    "idle_inhibitor",
+    "tray",
+  ],
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "sort-by-name": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰒱",
+      "2": "",
+      "3": "",
+      "4": "󱁤",
+      "5": "",
+    },
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10,
+  },
+  "clock": {
+    "timezone": "America/Chicago",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": " {:%d/%m/%Y}",
+    "format": " {:%H:%M}",
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "],
+    },
+    "on-click": "pavucontrol",
+  },
+  "sway/language": {
+    "format": "{long} {variant} {flag}",
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": "",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": "",
+    },
+  },
+}
