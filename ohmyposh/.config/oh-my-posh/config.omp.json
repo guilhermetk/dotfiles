@@ -5,7 +5,10 @@
     "closer": "p:os",
     "pink": "#ebbcba",
     "lavender": "#eb6f92",
-    "blue": "#31748f"
+    "blue": "#31748f",
+    "gold": "#f6c177",
+    "text": "#e0def4",
+    "iris": "#c4a7e7"
   },
   "blocks": [
     {
@@ -23,7 +26,7 @@
           "type": "path"
         },
         {
-          "foreground": "p:lavender",
+          "foreground": "p:blue",
           "properties": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
@@ -47,7 +50,7 @@
       "alignment": "right",
       "segments": [
         {
-          "foreground": "#e0def4",
+          "foreground": "p:iris",
           "leading_diamond": "",
           "properties": {
             "style": "roundrock",
@@ -66,7 +69,7 @@
       "segments": [
         {
           "style": "plain",
-          "foreground": "p:closer",
+          "foreground": "p:text",
           "template": "\uf105",
           "type": "text",
           "new_line": "true"
