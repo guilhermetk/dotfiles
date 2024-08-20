@@ -285,7 +285,7 @@ exec_always --no-startup-id killall copyq; sleep 5; copyq
 bar {
    position top
    status_command i3status
-   i3bar_command i3bar --transparency
+   # i3bar_command i3bar --transparency
    strip_workspace_numbers yes
    font pango:BerkeleyMono Nerd Font Mono 9
    separator_symbol "|"
