@@ -1,16 +1,16 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["sway/workspaces", "sway/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": [
-    "sway/language",
+    "hyprland/language",
     "pulseaudio",
     "custom/notification",
     "idle_inhibitor",
     "tray",
   ],
-  "sway/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "sort-by-name": true,
     "format": "{icon}",
@@ -19,7 +19,6 @@
       "2": "",
       "3": "",
       "4": "󱁤",
-      "5": "",
     },
   },
   "tray": {
@@ -40,8 +39,11 @@
     },
     "on-click": "pavucontrol",
   },
-  "sway/language": {
-    "format": "{long} {variant} {flag}",
+  "hyprland/language": {
+    "format": "Lang: {}",
+    "format-en": "AMERICA, HELL YEAH!",
+    "format-tr": "As bayrakları",
+    "keyboard-name": "at-translated-set-2-keyboard",
   },
   "custom/notification": {
     "tooltip": false,
@@ -70,7 +72,7 @@
       "deactivated": "",
     },
   },
-  "sway/window": {
+  "hyprland/window": {
     "format": "{title}",
     "max-length": 50,
   },
