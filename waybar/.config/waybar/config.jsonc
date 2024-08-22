@@ -6,6 +6,8 @@
   "modules-right": [
     "hyprland/language",
     "pulseaudio",
+    "cpu",
+    "memory",
     "custom/notification",
     "idle_inhibitor",
     "tray",
@@ -21,6 +23,16 @@
       "4": "󱁤",
     },
   },
+  "cpu": {
+    "interval": 2,
+    "format": " {}%",
+    "max-length": 10,
+  },
+  "memory": {
+    "interval": 2,
+    "format": " {}%",
+    "max-length": 10,
+  },
   "tray": {
     "icon-size": 14,
     "spacing": 10,
@@ -28,8 +40,9 @@
   "clock": {
     "timezone": "America/Chicago",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": " {:%d/%m/%Y}",
-    "format": " {:%H:%M}",
+    "format-alt": " {:%d/%m/%Y %H:%M:%S}",
+    "format": " {:%d/%m/%Y %H:%M}",
+    "interval": 1,
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",

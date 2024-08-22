@@ -47,18 +47,16 @@
   border-radius: 1rem;
 }
 
-#custom-music,
 #tray,
+#cpu,
+#memory,
 #backlight,
 #clock,
-#battery,
 #pulseaudio,
-#custom-lock,
-#custom-power,
 #custom-notification,
 #idle_inhibitor,
 #language {
-  background-color: @surface0;
+  background-color: @surface;
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
@@ -68,45 +66,23 @@
   margin-right: 1rem;
 }
 
-#battery {
-  color: @green;
-}
-
-#battery.charging {
-  color: @green;
-}
-
-#battery.warning:not(.charging) {
-  color: @red;
-}
-
-#backlight {
-  color: @yellow;
-}
-
 #pulseaudio {
   border-radius: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-#custom-music {
-  color: @mauve;
+#tray {
+  margin-right: 1rem;
   border-radius: 1rem;
 }
 
-#custom-lock {
-  border-radius: 1rem 0px 0px 1rem;
-  color: @lavender;
-}
-
-#custom-power {
+#cpu {
   margin-right: 1rem;
-  border-radius: 0px 1rem 1rem 0px;
-  color: @red;
+  border-radius: 1rem;
 }
 
-#tray {
+#memory {
   margin-right: 1rem;
   border-radius: 1rem;
 }
