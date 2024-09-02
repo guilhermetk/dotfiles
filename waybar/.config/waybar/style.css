@@ -11,40 +11,55 @@
   border: 2px solid alpha(@crust, 0.3);
 }
 
+#workspaces label {
+  font-family: BerkeleyMono Nerd Font Mono;
+  font-size: 16px;
+}
+
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
-  background-color: @surface0;
+  /* background-color: @surface; */
   margin-left: 1rem;
 }
 
 #workspaces button {
-  color: @lavender;
+  background-color: @surface;
+  color: @text;
   border-radius: 1rem;
   padding: 0.4rem;
 }
 
-#workspaces button.focused {
-  background-color: @mauve;
-  color: black;
-  border-radius: 1rem;
-}
-
 #workspaces button.active {
-  background-color: @mauve;
+  background-color: @rosepinerose;
   color: black;
   border-radius: 1rem;
 }
 
-#workspaces button:hover {
-  background-color: @mauve;
+#workspaces button.visible {
+  background-color: @rosepinerose;
+  color: black;
+  border-radius: 1rem;
+}
+
+#workspaces button.empty {
+  background-color: @rosepinerose;
   color: black;
   border-radius: 1rem;
 }
 
 #workspaces button.urgent {
-  color: @red;
+  background-color: @rosepinelove;
+  color: @text;
   border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  font-family: BerkeleyMono Nerd Font Mono;
+  background: @rosepinerose;
+  color: black;
+  border-radius: 1rem;
+  border-color: @rosepinerose;
 }
 
 #tray,
@@ -57,6 +72,7 @@
 #idle_inhibitor,
 #language {
   background-color: @surface;
+  color: @text;
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
@@ -106,4 +122,5 @@
 
 #window {
   margin-left: 1rem;
+  color: @text;
 }
