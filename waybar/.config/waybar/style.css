@@ -1,7 +1,7 @@
 @import "./mocha.css";
 
 * {
-  font-family: BerkeleyMono Nerd Font Mono;
+  font-family: BerkeleyMono Nerd Font;
   font-size: 14px;
   min-height: 0;
 }
@@ -12,8 +12,8 @@
 }
 
 #workspaces label {
-  font-family: BerkeleyMono Nerd Font Mono;
-  font-size: 16px;
+  font-family: BerkeleyMono Nerd Font;
+  font-size: 14px;
 }
 
 #workspaces {
@@ -27,7 +27,8 @@
   background-color: @surface;
   color: @text;
   border-radius: 1rem;
-  padding: 0.4rem;
+  /* padding: 0.4rem; */
+  padding-left: 5px;
 }
 
 #workspaces button.active {
@@ -55,7 +56,6 @@
 }
 
 #workspaces button:hover {
-  font-family: BerkeleyMono Nerd Font Mono;
   background: @rosepinerose;
   color: black;
   border-radius: 1rem;
@@ -108,8 +108,8 @@
 }
 
 #custom-notification {
-  font-family: "BerkeleyMono Nerd Font Mono";
-  font-size: 18px;
+  font-family: "BerkeleyMono Nerd Font";
+  font-size: 16px;
   margin-right: 1rem;
   border-radius: 1rem;
 }
