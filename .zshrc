@@ -123,4 +123,6 @@ alias zd=lazydocker
 alias zg=lazygit
 alias zz=zellij
 alias ls="eza -l --icons"
+alias lt="ls -TAL 2"
+alias ltt="ls -TAL"
 alias cat=batcat
