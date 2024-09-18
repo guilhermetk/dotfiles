@@ -51,7 +51,7 @@
 
 #workspaces button.urgent {
   background-color: @rosepinelove;
-  color: @text;
+  color: black;
   border-radius: 1rem;
 }
 
