@@ -1,0 +1,7 @@
+theme = rose-pine
+background = 000000
+
+font-family = BerkeleyMono Nerd Font
+font-size = 18
+
+macos-titlebar-style = hidden
