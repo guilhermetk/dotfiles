@@ -5,7 +5,7 @@
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders active_color=0xfff6c177 inactive_color=0xff908caa width=6.0'
+  'exec-and-forget borders active_color=0xfff6c177 inactive_color=0xff908caa width=5.0'
 ]
 
 # It's not necessary to copy all keys to your config.
@@ -90,11 +90,11 @@ outer.right =      5
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
 # You can uncomment the following lines to open up terminal with alt + enter shortcut (like in i3)
-cmd-enter = '''exec-and-forget osascript -e '
-tell application "kitty"
-    activate
-end tell'
-'''
+# cmd-enter = '''exec-and-forget osascript -e '
+# tell application "kitty"
+#     activate
+# end tell'
+# '''
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
