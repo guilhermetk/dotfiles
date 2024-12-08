@@ -1,7 +1,15 @@
+#theme
 theme = rose-pine
 background = 000000
+background-opacity = 0.9
 
+#font
 font-family = BerkeleyMono Nerd Font
 font-size = 18
 
+#window
 macos-titlebar-style = hidden
+
+#other
+copy-on-select = clipboard
+macos-option-as-alt = true
