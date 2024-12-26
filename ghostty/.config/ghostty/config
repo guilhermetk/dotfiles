@@ -5,7 +5,7 @@ background-opacity = 0.9
 
 #font
 font-family = BerkeleyMono Nerd Font
-font-size = 18
+font-size = 16
 
 #window
 macos-titlebar-style = hidden
