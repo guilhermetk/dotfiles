@@ -121,3 +121,6 @@ alias ls="eza -l --icons"
 alias lss="ls -TAL 2"
 alias lsss="ls -TAL"
 alias cat=batcat
+alias cat=bat
+# Key bindings
+bindkey '^Y' autosuggest-accept
