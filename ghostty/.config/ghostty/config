@@ -9,6 +9,7 @@ font-size = 16
 
 #window
 macos-titlebar-style = hidden
+window-decoration = false
 
 #other
 copy-on-select = clipboard
