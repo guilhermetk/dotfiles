@@ -13,7 +13,7 @@ return {
 				hijack_netrw_behavior = "open_default",
 				close_if_last_window = true,
 				window = {
-					position = "float",
+					position = "left",
 				},
 				git_status = {
 					symbols = {
@@ -34,7 +34,8 @@ return {
 			vim.api.nvim_set_keymap(
 				"n",
 				"<leader>o",
-				":Neotree toggle reveal float<CR>",
+				":Neotree toggle reveal<CR>",
+				-- ":Neotree toggle reveal float<CR>",
 				{ noremap = true, silent = true }
 			)
 		end,
