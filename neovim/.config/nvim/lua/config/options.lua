@@ -98,3 +98,5 @@ vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true, silent = t
 vim.api.nvim_set_keymap('n', '<leader>wa', ':wa<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>vd', '<cmd>lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+
+vim.diagnostic.config { virtual_text = { current_line = true } }

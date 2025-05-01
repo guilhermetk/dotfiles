@@ -1,11 +1,11 @@
 #theme
 theme = rose-pine
 background = 000000
-background-opacity = 0.9
+background-opacity = 1
 
 #font
 font-family = BerkeleyMono Nerd Font
-font-size = 16
+font-size = 20
 
 #window
 macos-titlebar-style = hidden

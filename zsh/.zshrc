@@ -120,7 +120,11 @@ alias zz=zellij
 alias ls="eza -l --icons"
 alias lss="ls -TAL 2"
 alias lsss="ls -TAL"
-alias cat=batcat
 alias cat=bat
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+
 # Key bindings
 bindkey '^Y' autosuggest-accept
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
