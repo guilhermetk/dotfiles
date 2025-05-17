@@ -33,6 +33,10 @@ return { -- Autoformat
       go = { 'gofmt', 'goimports', 'golines' },
       javascript = { 'prettier', stop_after_first = true },
       yaml = { 'yamlfmt' },
+      sql = { 'pg_format' },
+      html = { 'prettier' },
+      css = { 'prettier' },
+      json = { 'prettier' },
     },
   },
 }
