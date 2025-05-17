@@ -14,4 +14,5 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "catppuccin-mocha"
+@theme "raycast.rasi"
+// @theme "catppuccin-mocha"
