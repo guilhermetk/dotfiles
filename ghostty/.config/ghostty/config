@@ -1,16 +1,10 @@
 #theme
-theme = rose-pine
-background = 000000
-background-opacity = 0.9
+theme = Rose Pine
+background-opacity = 0.98
 
 #font
 font-family = BerkeleyMono Nerd Font
-font-size = 16
-
-#window
-macos-titlebar-style = hidden
-window-decoration = false
+font-size = 12
 
 #other
 copy-on-select = clipboard
-macos-option-as-alt = true
